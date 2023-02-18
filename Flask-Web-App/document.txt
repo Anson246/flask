@@ -1,0 +1,23 @@
+
+For all the flask applications we have config variable called secrete_key 
+and what this is going to do is kind of encrypt or sedcure the cookies and sessio data
+related to the website 
+
+from flask import Flask
+
+def create_app():
+    app = Flask(__name__)
+    app.config['SECRET_KEY']='anson'
+    
+    return app
+
+this is flask app 
+have initialized it with a secrete key 
+
+Now we go to the main website which is main.py and import  
+
+Blueprints:
+A Blueprint of the appllication
+This is has urls & routes
+
+To define anything we use @name.route('url')
